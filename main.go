@@ -31,6 +31,6 @@ func main() {
 		json.NewEncoder(w).Encode(resp)
 	})
 
-	http.ListenAndServe("localhost:8800", r)
+	http.ListenAndServe("0.0.0.0:8800", r)
 
 }
